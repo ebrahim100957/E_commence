@@ -1,0 +1,13 @@
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\bin\Debug\Univercity_CRUD.mdf
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\bin\Debug\Univercity_CRUD_log.ldf
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\bin\Debug\univercity management system.exe.config
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\bin\Debug\univercity management system.exe
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\bin\Debug\univercity management system.pdb
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity management system.csprojAssemblyReference.cache
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity_management_system.Properties.Resources.resources
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity management system.csproj.GenerateResource.cache
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity management system.csproj.CoreCompileInputs.cache
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity management system.exe
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity management system.pdb
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity_management_system.Login.resources
+C:\Users\NITRO\Desktop\projects year3\event project bro\univercity management system\univercity management system\obj\Debug\univercity_management_system.Mainform.resources
