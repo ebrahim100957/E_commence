@@ -25,7 +25,7 @@ namespace univercity_management_system
 
         private void But_login_Click(object sender, EventArgs e)
         {
-            if(txb_LoginId.Text == "" && txb_password.Text == "")
+            if(txb_LoginId.Text == "123" && txb_password.Text == "123")
             {
                 this.Visible = false;
                 Mainform main = new Mainform();
@@ -35,6 +35,11 @@ namespace univercity_management_system
             {
                 MessageBox.Show("Login id or password is incorrect");
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
