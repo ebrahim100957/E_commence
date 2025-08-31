@@ -47,19 +47,29 @@ namespace univercity_management_system
             user.password = txb_pass.Text;
             user.role = txb_role.Text;
 
-            bool success = user.InsertUser(user);
-
-            dvg_user_info.DataSource = User.GetUsers();
-
-            if (success)
+            //new
+            if(user.role == "admin" || user.role == "manger" || user.role == "empolyee")
             {
-                ClearControls();
-                MessageBox.Show(@"user has been added successfully");
+                bool success = user.InsertUser(user);
+
+                dvg_user_info.DataSource = User.GetUsers();
+
+                if (success)
+                {
+                    ClearControls();
+                    MessageBox.Show(@"user has been added successfully");
+                }
+                else
+                {
+                    MessageBox.Show(@"error occured. please try again..");
+                }
             }
             else
             {
-                MessageBox.Show(@"error occured. please try again..");
+                MessageBox.Show("the role should be admin or manger or emplyee");
             }
+
+            
         }
 
         private void But_update_Click(object sender, EventArgs e)
@@ -120,6 +130,24 @@ namespace univercity_management_system
             txb_username.Text = dvg_user_info.Rows[index].Cells[1].Value.ToString();
             txb_pass.Text = dvg_user_info.Rows[index].Cells[2].Value.ToString();
             txb_role.Text = dvg_user_info.Rows[index].Cells[3].Value.ToString();
+        }
+
+        private void But_students_Click(object sender, EventArgs e)
+        {
+            students stu = new students();
+            stu.Show();
+        }
+
+        private void But_teachers_Click(object sender, EventArgs e)
+        {
+            teachers t = new teachers();
+            t.Show();
+        }
+
+        private void But_departments_Click(object sender, EventArgs e)
+        {
+            departments d = new departments();
+            d.Show();
         }
     }
 }

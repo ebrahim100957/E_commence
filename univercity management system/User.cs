@@ -25,6 +25,8 @@ namespace univercity_management_system
 
         private const string DeleteQuery = "delete from Users where Id =@id ";
 
+        private const string Selectpass = "select password from Users where Id as id ";
+
         public static DataTable GetUsers()
         {
             DataTable datatable = new DataTable();
@@ -41,6 +43,7 @@ namespace univercity_management_system
             }
             return datatable;
         }
+      
 
         public bool InsertUser(User user)
         {
@@ -84,7 +87,7 @@ namespace univercity_management_system
             using (SqlConnection con = new SqlConnection(myConn))
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(UpdateQuery, con))
+                using (SqlCommand com = new SqlCommand(DeleteQuery, con))
                 {
                     com.Parameters.AddWithValue("@id", user.id);
                     rows = com.ExecuteNonQuery();
@@ -92,6 +95,7 @@ namespace univercity_management_system
             }
             return (rows > 0) ? true : false;
         }
+       
 
 
     }

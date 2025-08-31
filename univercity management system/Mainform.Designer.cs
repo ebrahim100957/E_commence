@@ -48,8 +48,13 @@
             this.dvg_user_info = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.pnl_controls = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.but_students = new System.Windows.Forms.Button();
+            this.but_teachers = new System.Windows.Forms.Button();
+            this.but_departments = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_user_info)).BeginInit();
             this.pnl_controls.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -149,6 +154,7 @@
             // 
             this.txb_pass.Location = new System.Drawing.Point(23, 103);
             this.txb_pass.Name = "txb_pass";
+            this.txb_pass.PasswordChar = '*';
             this.txb_pass.Size = new System.Drawing.Size(481, 22);
             this.txb_pass.TabIndex = 10;
             // 
@@ -222,11 +228,52 @@
             this.pnl_controls.Size = new System.Drawing.Size(509, 191);
             this.pnl_controls.TabIndex = 17;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.but_departments);
+            this.panel1.Controls.Add(this.but_teachers);
+            this.panel1.Controls.Add(this.but_students);
+            this.panel1.Location = new System.Drawing.Point(897, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 283);
+            this.panel1.TabIndex = 18;
+            // 
+            // but_students
+            // 
+            this.but_students.Location = new System.Drawing.Point(42, 20);
+            this.but_students.Name = "but_students";
+            this.but_students.Size = new System.Drawing.Size(109, 23);
+            this.but_students.TabIndex = 0;
+            this.but_students.Text = "students";
+            this.but_students.UseVisualStyleBackColor = true;
+            this.but_students.Click += new System.EventHandler(this.But_students_Click);
+            // 
+            // but_teachers
+            // 
+            this.but_teachers.Location = new System.Drawing.Point(42, 83);
+            this.but_teachers.Name = "but_teachers";
+            this.but_teachers.Size = new System.Drawing.Size(109, 23);
+            this.but_teachers.TabIndex = 1;
+            this.but_teachers.Text = "teachers";
+            this.but_teachers.UseVisualStyleBackColor = true;
+            this.but_teachers.Click += new System.EventHandler(this.But_teachers_Click);
+            // 
+            // but_departments
+            // 
+            this.but_departments.Location = new System.Drawing.Point(42, 143);
+            this.but_departments.Name = "but_departments";
+            this.but_departments.Size = new System.Drawing.Size(109, 23);
+            this.but_departments.TabIndex = 2;
+            this.but_departments.Text = "departments";
+            this.but_departments.UseVisualStyleBackColor = true;
+            this.but_departments.Click += new System.EventHandler(this.But_departments_Click);
+            // 
             // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 629);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_controls);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dvg_user_info);
@@ -248,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvg_user_info)).EndInit();
             this.pnl_controls.ResumeLayout(false);
             this.pnl_controls.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,6 +322,10 @@
         private System.Windows.Forms.DataGridView dvg_user_info;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel pnl_controls;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button but_departments;
+        private System.Windows.Forms.Button but_teachers;
+        private System.Windows.Forms.Button but_students;
     }
 }
 

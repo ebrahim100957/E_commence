@@ -25,7 +25,11 @@ namespace univercity_management_system
 
         private void But_login_Click(object sender, EventArgs e)
         {
-            if(txb_LoginId.Text == "123" && txb_password.Text == "123")
+            
+
+
+
+            if ( txb_password.Text =="123" && txb_password.Text == "123" )
             {
                 this.Visible = false;
                 Mainform main = new Mainform();
